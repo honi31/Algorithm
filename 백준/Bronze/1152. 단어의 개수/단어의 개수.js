@@ -1,8 +1,7 @@
-let fs = require("fs");
-let input = fs.readFileSync("/dev/stdin").toString().split("\n");
-let data = input[0].trim().split(" ");
-if (data == "") {
+let input = require("fs").readFileSync("/dev/stdin").toString().trim();
+
+if (input === "") {
   console.log(0);
 } else {
-  console.log(data.length);
+  console.log(input.split(" ").length);
 }
