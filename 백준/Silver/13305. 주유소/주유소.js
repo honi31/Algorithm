@@ -10,8 +10,8 @@ for (let i = 0; i < oil.length; i++) {
   oil[i] = minValue;
 }
 
-let answer = 0;
+let answer = BigInt(0);
 for (let i = 0; i < distance.length; i++) {
-  answer += distance[i] * oil[i];
+  answer += BigInt(distance[i]) * BigInt(oil[i]);
 }
-console.log(answer);
+console.log(String(answer));
